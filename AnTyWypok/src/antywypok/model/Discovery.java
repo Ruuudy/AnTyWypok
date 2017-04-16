@@ -19,7 +19,7 @@ public class Discovery {
 		this.name = discovery.name;
 		this.description= discovery.description;
 		this.url = discovery.url;
-		this.timestamp = discovery.timestamp;
+		this.timestamp = new Timestamp(discovery.timestamp.getTime());
 		this.user = new User(discovery.user);
 		this.upVote = discovery.upVote;
 		this.downVote = discovery.downVote;

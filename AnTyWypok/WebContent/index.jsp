@@ -23,7 +23,7 @@
   			<div class="collapse navbar-collapse navHeaderCollapse">
   				<ul class="nav navbar-nav navbar-right">
 		            <li class="active"><a href="#">Główna</a></li>
-		            <li><a href="#">Dodaj</a></li>
+		            <li><a href="add">Dodaj</a></li>
 		            <c:choose>
 		                <c:when test="${not empty sessionScope.user}">
 		                    <li><a href="logout">Wyloguj się</a></li>

@@ -20,13 +20,6 @@ import antywypok.service.UserService;
 @WebFilter("/*")
 public class LoginFilter implements Filter {
 
-    /**
-     * Default constructor. 
-     */
-    public LoginFilter() {
-        // TODO Auto-generated constructor stub
-    }
-
 	/**
 	 * @see Filter#destroy()
 	 */

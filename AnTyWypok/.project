@@ -32,47 +32,47 @@
 		<link>
 			<name>WebContent/WEB-INF/lib/c3p0-0.9.5.2.jar</name>
 			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/Program%20Files/eclipse%20jee/eclipse/libraries/c3p0-0.9.5.2/lib/c3p0-0.9.5.2.jar</locationURI>
+			<location>C:/Program Files/eclipse jee/eclipse/libraries/c3p0-0.9.5.2/lib/c3p0-0.9.5.2.jar</location>
 		</link>
 		<link>
 			<name>WebContent/WEB-INF/lib/c3p0-oracle-thin-extras-0.9.5.2.jar</name>
 			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/Program%20Files/eclipse%20jee/eclipse/libraries/c3p0-0.9.5.2/lib/c3p0-oracle-thin-extras-0.9.5.2.jar</locationURI>
+			<location>C:/Program Files/eclipse jee/eclipse/libraries/c3p0-0.9.5.2/lib/c3p0-oracle-thin-extras-0.9.5.2.jar</location>
 		</link>
 		<link>
 			<name>WebContent/WEB-INF/lib/commons-logging-1.2.jar</name>
 			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/Program%20Files/eclipse%20jee/eclipse/libraries/spring-jdbc/commons-logging-1.2.jar</locationURI>
+			<location>C:/Program Files/eclipse jee/eclipse/libraries/spring-jdbc/commons-logging-1.2.jar</location>
 		</link>
 		<link>
 			<name>WebContent/WEB-INF/lib/mchange-commons-java-0.2.11.jar</name>
 			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/Program%20Files/eclipse%20jee/eclipse/libraries/c3p0-0.9.5.2/lib/mchange-commons-java-0.2.11.jar</locationURI>
+			<location>C:/Program Files/eclipse jee/eclipse/libraries/c3p0-0.9.5.2/lib/mchange-commons-java-0.2.11.jar</location>
 		</link>
 		<link>
 			<name>WebContent/WEB-INF/lib/mysql-connector-java-5.1.40-bin.jar</name>
 			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/Program%20Files/eclipse%20jee/eclipse/libraries/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar</locationURI>
+			<location>C:/Program Files/eclipse jee/eclipse/libraries/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar</location>
 		</link>
 		<link>
 			<name>WebContent/WEB-INF/lib/spring-beans-4.1.4.RELEASE.jar</name>
 			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/Program%20Files/eclipse%20jee/eclipse/libraries/spring-jdbc/spring-beans-4.1.4.RELEASE.jar</locationURI>
+			<location>C:/Program Files/eclipse jee/eclipse/libraries/spring-jdbc/spring-beans-4.1.4.RELEASE.jar</location>
 		</link>
 		<link>
 			<name>WebContent/WEB-INF/lib/spring-core-4.1.4.RELEASE.jar</name>
 			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/Program%20Files/eclipse%20jee/eclipse/libraries/spring-jdbc/spring-core-4.1.4.RELEASE.jar</locationURI>
+			<location>C:/Program Files/eclipse jee/eclipse/libraries/spring-jdbc/spring-core-4.1.4.RELEASE.jar</location>
 		</link>
 		<link>
 			<name>WebContent/WEB-INF/lib/spring-jdbc-4.1.4.RELEASE.jar</name>
 			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/Program%20Files/eclipse%20jee/eclipse/libraries/spring-jdbc/spring-jdbc-4.1.4.RELEASE.jar</locationURI>
+			<location>C:/Program Files/eclipse jee/eclipse/libraries/spring-jdbc/spring-jdbc-4.1.4.RELEASE.jar</location>
 		</link>
 		<link>
 			<name>WebContent/WEB-INF/lib/spring-tx-4.1.4.RELEASE.jar</name>
 			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/Program%20Files/eclipse%20jee/eclipse/libraries/spring-jdbc/spring-tx-4.1.4.RELEASE.jar</locationURI>
+			<location>C:/Program Files/eclipse jee/eclipse/libraries/spring-jdbc/spring-tx-4.1.4.RELEASE.jar</location>
 		</link>
 	</linkedResources>
 </projectDescription>
