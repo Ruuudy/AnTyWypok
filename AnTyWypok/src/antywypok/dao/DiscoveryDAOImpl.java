@@ -1,9 +1,12 @@
 package antywypok.dao;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
@@ -11,12 +14,14 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 
 import antywypok.model.Discovery;
+import antywypok.model.User;
 import antywypok.util.ConnectionProvider;
 
 public class DiscoveryDAOImpl implements DiscoveryDAO {
 	
 	private static final String CREATE_DISCOVERY = "INSERT INTO discovery(name, description, url, user_id, date, up_vote, down_vote) " + "VALUES(:name, :description, :url, :user_id, :date, :up_vote, :down_vote);";
-	 
+	
+	private static final String READ_ALL_DISCOVERIES = "SELECT user.user_id, username, email, is_active, password, discovery_id, name, description, url, date, up_vote, down_vote " + "FROM discovery LEFT JOIN user ON discovery.user_id=user.user_id;";
 		
 	private NamedParameterJdbcTemplate template;
 	
@@ -61,6 +66,28 @@ public class DiscoveryDAOImpl implements DiscoveryDAO {
  
     @Override
     public List<Discovery> getAll() {
-        return null;
+        List<Discovery>  discoveries = template.query(READ_ALL_DISCOVERIES, new DiscoveryRowMapper());
+        return discoveries;
+    }
+    
+    private class DiscoveryRowMapper implements RowMapper<Discovery>{
+    	@Override
+    	public Discovery mapRow(ResultSet rs, int rowNum) throws SQLException{
+    		Discovery discovery = new Discovery();
+    		discovery.setId(rs.getLong("discovery_id"));
+    		discovery.setName(rs.getString("name"));
+    		discovery.setName(rs.getString("description"));
+    		discovery.setUrl(rs.getString("url"));
+    		discovery.setUpVote(rs.getInt("up_vote"));
+    		discovery.setDownVote(rs.getInt("down_vote"));
+    		discovery.setTimestamp(rs.getTimestamp("date"));
+    		User user = new User();
+    		user.setId(rs.getLong("user_id"));
+    		user.setUsername(rs.getString("username"));
+    		user.setEmail(rs.getString("email"));
+    		user.setPassword(rs.getString("password"));
+    		discovery.setUser(user);
+    		return discovery;
+    	}
     }
 }
