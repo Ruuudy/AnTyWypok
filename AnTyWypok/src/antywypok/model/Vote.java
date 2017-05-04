@@ -2,7 +2,7 @@ package antywypok.model;
 
 import java.sql.Timestamp;
 
-enum VoteType { VOTE_UP, VOTE_DOWN;}
+
 
 public class Vote {
 
