@@ -13,9 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import antywypok.model.Discovery;
 import antywypok.service.DiscoverService;
 
-/**
- * Servlet implementation class HomeController
- */
 @WebServlet("")
 public class HomeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -31,7 +28,7 @@ public class HomeController extends HttpServlet {
 	private void saveDiscoveriesInRequest(HttpServletRequest request){
 		DiscoverService discoverySer = new DiscoverService();
 		List<Discovery> allDiscoveries = discoverySer.getAllDiscoveries((d1, d2) -> (d2.getUpVote() - d2.getDownVote()) - (d1.getUpVote() - d1.getDownVote()));
-		// Wed³ug daty
+		// WedÂ³ug daty
 		//List<Discovery> allDiscoveries = discoveryService.getAllDiscoveries((d1, d2) -> d2.getTimestamp().compareTo(d1.getTimestamp()));
 		request.setAttribute("discoveries", allDiscoveries);
 	}
